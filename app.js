@@ -109,9 +109,47 @@
 // }while (true);
 
 // This is Q10 in extra exercises (another way to write the code)
-let number = prompt("Enter a number between 0-100")
-while (number < 0 || number > 100){
-  alert("areuseriousrightnowbro")
-  number = prompt("Enter a number between 0-100")
+// let number = prompt("Enter a number between 0-100")
+// while (number < 0 || number > 100){
+//   alert("areuseriousrightnowbro")
+//   number = prompt("Enter a number between 0-100")
+// }
+// alert("Good boy")
+
+// This is Q11 in extra exercises 
+// number = prompt("Enter a number between 0-100")
+// while (number < 0 || number > 100 || isNaN(number)
+//   ){
+//   alert("areuseriousrightnowbro")
+//   number = prompt("Enter a number between 0-100")
+// }
+// alert("Good boy")
+
+// This is Q12 in extra exercises
+//  let number = prompt("Enter an integer");
+// let sum=0;
+// for (let i=0; i<=number; i++){
+// sum = sum + i;
+// }
+// alert(`The sum of ${number} is ${sum}`)
+// sum = 0 + 0
+// sum = 0 + 1
+// sum = 1 + 2
+// sum = 3 + 3
+// sum = 6 + 4
+// sum = 10 + 5
+// sum = 15 + 6
+// sum = 21 + 7
+// sum = 28 + 8
+// sum = 36 + 9
+// sum = 45 + 10
+
+// This is Q13 in extra exercises
+let number = prompt("Enter an integer");
+let sum=0;
+for (let i=0; i<=number; i++){
+sum = sum + i;
+average = sum / (i+1) ;
 }
-alert("Good boy")
+alert(`The average of ${number} is ${average}`)
+
