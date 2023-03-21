@@ -71,13 +71,11 @@
 //   console.log("PLEASE TRY AGAIN");
 // }
 
-
 // This is Q7 in extra exercises
 
 // for ( let i=0; i<=5; i++ ){
 //   alert(i);
 // }
-
 
 // This is Q8 in extra exercises
 // let space="";
@@ -94,11 +92,9 @@
 // }
 // }
 
-
 // This is Q10 in extra exercises
 // do {
 // let number = prompt("Enter a number between 0-100")
-
 
 // if ( number >= 0 && number <=100 ){
 //   alert("Good boy")
@@ -116,7 +112,7 @@
 // }
 // alert("Good boy")
 
-// This is Q11 in extra exercises 
+// This is Q11 in extra exercises
 // number = prompt("Enter a number between 0-100")
 // while (number < 0 || number > 100 || isNaN(number)
 //   ){
@@ -145,11 +141,42 @@
 // sum = 45 + 10
 
 // This is Q13 in extra exercises
-let number = prompt("Enter an integer");
-let sum=0;
-for (let i=0; i<=number; i++){
-sum = sum + i;
-average = sum / (i+1) ;
-}
-alert(`The average of ${number} is ${average}`)
+// let number = prompt("Enter an integer");
+// let sum=0;
+// for (let i=0; i<=number; i++){
+// sum = sum + i;
+// average = sum / (i+1) ;
+// }
+// alert(`The average of ${number} is ${average}`)
 
+// 1- create a function that takes two arguments, one is an array and the other is a number, then return the index of the given value or return -1 if the element cannot be found.
+// let arr = [1, 2, 3, 4, 5];
+// let number = 5;
+// let first = function (arr, number) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === number) {
+//       return i;
+//     } else {
+//     }
+//   }
+//   return -1;
+// };
+// console.log(first(arr, number));
+
+// 2- create a function that takes an array of integers between 1 and 100 except for one, and returns the missing number.
+
+let first = function () {
+  let random;
+
+  let arr = [];
+  for (i = 1; i <= 100; i++) {
+    random = Math.floor(Math.random() * 100);
+
+    arr.push(i);
+  }
+
+  let deletedValues = arr.splice(random, 2);
+  console.log(deletedValues);
+  console.log(arr);
+};
+first();
