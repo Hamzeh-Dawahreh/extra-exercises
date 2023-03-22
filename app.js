@@ -166,17 +166,22 @@
 // 2- create a function that takes an array of integers between 1 and 100 except for one, and returns the missing number.
 
 let first = function () {
-  let random;
+  let random1;
+  let random2;
 
   let arr = [];
   for (i = 1; i <= 100; i++) {
-    random = Math.floor(Math.random() * 100);
+    random1 = Math.floor(Math.random() * 100);
+    random2 = Math.floor(Math.random() * 100);
 
     arr.push(i);
   }
 
-  let deletedValues = arr.splice(random, 2);
-  console.log(deletedValues);
+  arr.splice(random1, 1);
+  arr.splice(random2, 1);
+
   console.log(arr);
+  console.log(random1);
+  console.log(random2);
 };
 first();
