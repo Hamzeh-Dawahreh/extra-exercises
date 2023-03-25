@@ -165,23 +165,52 @@
 
 // 2- create a function that takes an array of integers between 1 and 100 except for one, and returns the missing number.
 
-let first = function () {
-  let random1;
-  let random2;
+// let first = function () {
+//   let random1;
+//   let random2;
 
-  let arr = [];
-  for (i = 1; i <= 100; i++) {
-    random1 = Math.floor(Math.random() * 100);
-    random2 = Math.floor(Math.random() * 100);
+//   let arr = [];
+//   for (i = 1; i <= 100; i++) {
+//     random1 = Math.floor(Math.random() * 100);
+//     random2 = Math.floor(Math.random() * 100);
 
-    arr.push(i);
+//     arr.push(i);
+//   }
+
+//   arr.splice(random1, 1);
+//   arr.splice(random2, 1);
+
+//   console.log(arr);
+//   console.log(random1);
+//   console.log(random2);
+// };
+// first();
+
+//3- create a function that takes an array of integers and returns a new array with the same integers without the duplicates
+
+// let remove = (arr) => {
+//   let result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     //if the number doesn't exist, then push(only push for the numbers indexof is = -1 (all non duplicated numbers))
+//     if (result.indexOf(arr[i]) === -1) {
+//       //بس اعمل بوش للارقام اللي مش موجودة
+//       result.push(arr[i]);
+//     }
+//   }
+//   return result;
+// };
+// console.log(remove([1, 3, 3, 5]));
+//4- create a function that takes an array of integers and returns the average of all the numbers in it
+
+let findaverage = () => {
+  let arr = [3, 5, 6, 7, 8, 10];
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
   }
 
-  arr.splice(random1, 1);
-  arr.splice(random2, 1);
-
-  console.log(arr);
-  console.log(random1);
-  console.log(random2);
+  let average = sum / arr.length;
+  return average;
 };
-first();
+
+console.log(findaverage());
